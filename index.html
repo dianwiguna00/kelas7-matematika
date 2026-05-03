@@ -8,187 +8,260 @@
 <style>
 body{
   font-family: Arial, sans-serif;
-  background:#f2f6ff;
   margin:0;
-}
-.container{
-  max-width:900px;
-  margin:30px auto;
-  background:white;
-  padding:25px;
-  border-radius:15px;
-  box-shadow:0 8px 20px rgba(0,0,0,0.15);
-}
-h1{
-  text-align:center;
+  padding:0;
+
+  /* ✅ BACKGROUND JPG */
+  background: url("1.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
+/* overlay biar teks tetap jelas */
+body::before{
+  content:"";
+  position:fixed;
+  top:0;left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.35);
+  z-index:-1;
+}
+
+.container{
+  max-width:900px;
+  margin:40px auto;
+  padding:25px;
+
+  /* ✨ glass effect */
+  background:rgba(255,255,255,0.85);
+  backdrop-filter: blur(6px);
+
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+h1{
+  text-align:center;
+  color:#222;
+}
+
+/* DETAILS */
 details{
   margin-bottom:15px;
 }
 
 summary{
-  background:#4CAF50;
+  background:linear-gradient(135deg,#4CAF50,#2e7d32);
   color:white;
   padding:12px;
   border-radius:10px;
   cursor:pointer;
   font-weight:bold;
   font-size:18px;
+  transition:0.3s;
+}
+
+summary:hover{
+  transform:scale(1.02);
 }
 
 details details summary{
-  background:#2196F3;
+  background:linear-gradient(135deg,#2196F3,#1565c0);
   font-size:16px;
-  margin-top:10px;
 }
 
+/* LIST */
 ul{
   list-style:none;
   padding-left:15px;
 }
+
 li{
   margin:8px 0;
 }
+
+/* LINK */
 a{
   display:block;
   padding:10px;
-  background:#e8f0ff;
   border-radius:8px;
   text-decoration:none;
   color:#333;
   font-weight:bold;
-}
-a:hover{
-  background:#cfdfff;
+  background:#e9f0ff;
+  transition:0.3s;
 }
 
+a:hover{
+  background:#cfdfff;
+  transform:translateX(5px);
+}
+
+/* BUTTON VIDEO */
+.menu-button{
+  display:block;
+  background:linear-gradient(135deg,#4CAF50,#2e7d32);
+  color:white;
+  padding:14px;
+  border-radius:12px;
+  margin:25px 0;
+  font-weight:bold;
+  font-size:18px;
+  text-decoration:none;
+  text-align:light;
+  transition:0.3s;
+}
+
+.menu-button:hover{
+  background:#43a047;
+  transform:scale(1.02);
+}
+
+/* FOOTER */
 .footer{
   text-align:center;
   margin-top:30px;
   font-size:14px;
-  color:#666;
+  color:#fff;
+  text-shadow:0 2px 5px rgba(0,0,0,0.5);
 }
 </style>
+
 </head>
 
 <body>
+
 <div class="container">
 
-<h1>📚 Kuis Matematika Kelas 7</h1>
-<p style="text-align:center;">Klik kelas 7 → Semester → kuis 👇</p>
+<h1>📚 Matematika - Kuis 1-2</h1>
+<p style="text-align:center;">Kuis 1-2 → Bab → Kuis 👇</p>
 
-<!-- ================= KELAS 7 ================= -->
+<!-- ================= Kuis 1 ================= -->
 <details>
-  <summary>📘 Kelas 7</summary>
+  <summary>📘 Kuis 1-2</summary>
 
   <details>
-    <summary>Semester 1</summary>
+    <summary>📘 Kuis 1</summary>
     <ul>
-<li><a href="Kelas7/7A1/Kuis1.html">Kuis 1</a></li>
-<li><a href="Kelas7/7A1/Kuis2.html">Kuis 2</a></li>
-<li><a href="Kelas7/7A1/Kuis3.html">Kuis 3</a></li>
-<li><a href="Kelas7/7A1/Kuis4.html">Kuis 4</a></li>
-<li><a href="Kelas7/7A1/Kuis5.html">Kuis 5</a></li>
-<li><a href="Kelas7/7A1/Kuis6.html">Kuis 6</a></li>
-<li><a href="Kelas7/7A1/Kuis7.html">Kuis 7</a></li>
-<li><a href="Kelas7/7A1/Kuis8.html">Kuis 8</a></li>
-<li><a href="Kelas7/7A1/Kuis9.html">Kuis 9</a></li>
-<li><a href="Kelas7/7A1/Kuis10.html">Kuis 10</a></li>
-<li><a href="Kelas7/7A1/Kuis11.html">Kuis 11</a></li>
-<li><a href="Kelas7/7A1/Kuis12.html">Kuis 12</a></li>
-<li><a href="Kelas7/7A1/Kuis13.html">Kuis 13</a></li>
-<li><a href="Kelas7/7A1/Kuis14.html">Kuis 14</a></li>
-<li><a href="Kelas7/7A1/Kuis15.html">Kuis 15</a></li>
-<li><a href="Kelas7/7A1/Kuis16.html">Kuis 16</a></li>
-<li><a href="Kelas7/7A1/Kuis17.html">Kuis 17</a></li>
-<li><a href="Kelas7/7A1/Kuis18.html">Kuis 18</a></li>
-<li><a href="Kelas7/7A1/Kuis19.html">Kuis 19</a></li>
-<li><a href="Kelas7/7A1/Kuis20.html">Kuis 20</a></li>
-<li><a href="Kelas7/7A1/Kuis21.html">Kuis 21</a></li>
-<li><a href="Kelas7/7A1/Kuis22.html">Kuis 22</a></li>
-<li><a href="Kelas7/7A1/Kuis23.html">Kuis 23</a></li>
-<li><a href="Kelas7/7A1/Kuis24.html">Kuis 24</a></li>
-<li><a href="Kelas7/7A1/Kuis25.html">Kuis 25</a></li>
-<li><a href="Kelas7/7A1/Kuis26.html">Kuis 26</a></li>
-<li><a href="Kelas7/7A1/Kuis27.html">Kuis 27</a></li>
-<li><a href="Kelas7/7A1/Kuis28.html">Kuis 28</a></li>
-<li><a href="Kelas7/7A1/Kuis29.html">Kuis 29</a></li>
-<li><a href="Kelas7/7A1/Kuis30.html">Kuis 30</a></li>
+<li><a href="#">📘 Bilangan Bulat dan Pecahan</a></li>
+<li><a href="Kelas7/7A1/Kuis1.html">📄 Kuis 1</a></li>
+<li><a href="Kelas7/7A1/Kuis2.html">📄 Kuis 2</a></li>
+<li><a href="Kelas7/7A1/Kuis3.html">📄 Kuis 3</a></li>
+<li><a href="Kelas7/7A1/Kuis4.html">📄 Kuis 4</a></li>
+<li><a href="Kelas7/7A1/Kuis5.html">📄 Kuis 5</a></li>
+<li><a href="Kelas7/7A1/Kuis6.html">📄 Kuis 6</a></li>
+<li><a href="Kelas7/7A1/Kuis7.html">📄 Kuis 7</a></li>
+<li><a href="Kelas7/7A1/Kuis8.html">📄 Kuis 8</a></li>
+<li><a href="#">📘 Bentuk Aljabar</a></li>
+<li><a href="Kelas7/7A1/Kuis9.html">📄 Kuis 9</a></li>
+<li><a href="Kelas7/7A1/Kuis10.html">📄 Kuis 10</a></li>
+<li><a href="Kelas7/7A1/Kuis11.html">📄 Kuis 11</a></li>
+<li><a href="Kelas7/7A1/Kuis12.html">📄 Kuis 12</a></li>
+<li><a href="Kelas7/7A1/Kuis13.html">📄 Kuis 13</a></li>
+<li><a href="Kelas7/7A1/Kuis14.html">📄 Kuis 14</a></li>
+<li><a href="#">📘 Persamaan Linear Satu Variabel</a></li>
+<li><a href="Kelas7/7A1/Kuis15.html">📄 Kuis 15</a></li>
+<li><a href="Kelas7/7A1/Kuis16.html">📄 Kuis 16</a></li>
+<li><a href="Kelas7/7A1/Kuis17.html">📄 Kuis 17</a></li>
+<li><a href="Kelas7/7A1/Kuis18.html">📄 Kuis 18</a></li>
+<li><a href="Kelas7/7A1/Kuis19.html">📄 Kuis 19</a></li>
+<li><a href="Kelas7/7A1/Kuis20.html">📄 Kuis 20</a></li>
+<li><a href="#">📘 Aritmatika Sosial</a></li>
+<li><a href="Kelas7/7A1/Kuis21.html">📄 Kuis 21</a></li>
+<li><a href="Kelas7/7A1/Kuis22.html">📄 Kuis 22</a></li>
+<li><a href="Kelas7/7A1/Kuis23.html">📄 Kuis 23</a></li>
+<li><a href="Kelas7/7A1/Kuis24.html">📄 Kuis 24</a></li>
+<li><a href="Kelas7/7A1/Kuis25.html">📄 Kuis 25</a></li>
+<li><a href="Kelas7/7A1/Kuis26.html">📄 Kuis 26</a></li>
+<li><a href="Kelas7/7A1/Kuis27.html">📄 Kuis 27</a></li>
+<li><a href="Kelas7/7A1/Kuis28.html">📄 Kuis 28</a></li>
+<li><a href="Kelas7/7A1/Kuis29.html">📄 Kuis 29</a></li>
+<li><a href="Kelas7/7A1/Kuis30.html">📄 Kuis 30</a></li>
     </ul>
   </details>
   <details>
-    <summary>Semester 2</summary>
+    <summary>📘 Kuis 2</summary>
     <ul>
-<li><a href="Kelas7/7A2/Kuis1.html">Kuis 1</a></li>
-<li><a href="Kelas7/7A2/Kuis2.html">Kuis 2</a></li>
-<li><a href="Kelas7/7A2/Kuis3.html">Kuis 3</a></li>
-<li><a href="Kelas7/7A2/Kuis4.html">Kuis 4</a></li>
-<li><a href="Kelas7/7A2/Kuis5.html">Kuis 5</a></li>
-<li><a href="Kelas7/7A2/Kuis6.html">Kuis 6</a></li>
-<li><a href="Kelas7/7A2/Kuis7.html">Kuis 7</a></li>
-<li><a href="Kelas7/7A2/Kuis8.html">Kuis 8</a></li>
-<li><a href="Kelas7/7A2/Kuis9.html">Kuis 9</a></li>
-<li><a href="Kelas7/7A2/Kuis10.html">Kuis 10</a></li>
-<li><a href="Kelas7/7A2/Kuis11.html">Kuis 11</a></li>
-<li><a href="Kelas7/7A2/Kuis12.html">Kuis 12</a></li>
-<li><a href="Kelas7/7A2/Kuis13.html">Kuis 13</a></li>
-<li><a href="Kelas7/7A2/Kuis14.html">Kuis 14</a></li>
-<li><a href="Kelas7/7A2/Kuis15.html">Kuis 15</a></li>
-<li><a href="Kelas7/7A2/Kuis16.html">Kuis 16</a></li>
-<li><a href="Kelas7/7A2/Kuis17.html">Kuis 17</a></li>
-<li><a href="Kelas7/7A2/Kuis18.html">Kuis 18</a></li>
-<li><a href="Kelas7/7A2/Kuis19.html">Kuis 19</a></li>
-<li><a href="Kelas7/7A2/Kuis20.html">Kuis 20</a></li>
-<li><a href="Kelas7/7A2/Kuis21.html">Kuis 21</a></li>
-<li><a href="Kelas7/7A2/Kuis22.html">Kuis 22</a></li>
-<li><a href="Kelas7/7A2/Kuis23.html">Kuis 23</a></li>
-<li><a href="Kelas7/7A2/Kuis24.html">Kuis 24</a></li>
-<li><a href="Kelas7/7A2/Kuis25.html">Kuis 25</a></li>
+<li><a href="#">📘 Perbandingan</a></li>
+<li><a href="Kelas7/7A2/Kuis1.html">📄 Kuis 1</a></li>
+<li><a href="Kelas7/7A2/Kuis2.html">📄 Kuis 2</a></li>
+<li><a href="Kelas7/7A2/Kuis3.html">📄 Kuis 3</a></li>
+<li><a href="Kelas7/7A2/Kuis4.html">📄 Kuis 4</a></li>
+<li><a href="Kelas7/7A2/Kuis5.html">📄 Kuis 5</a></li>
+<li><a href="Kelas7/7A2/Kuis6.html">📄 Kuis 6</a></li>
+<li><a href="#">📘 Garis dan Sudut</a></li>
+<li><a href="Kelas7/7A2/Kuis7.html">📄 Kuis 7</a></li>
+<li><a href="Kelas7/7A2/Kuis8.html">📄 Kuis 8</a></li>
+<li><a href="Kelas7/7A2/Kuis9.html">📄 Kuis 9</a></li>
+<li><a href="Kelas7/7A2/Kuis10.html">📄 Kuis 10</a></li>
+<li><a href="Kelas7/7A2/Kuis11.html">📄 Kuis 11</a></li>
+<li><a href="Kelas7/7A2/Kuis12.html">📄 Kuis 12</a></li>
+<li><a href="#">📘 Bangun Datar</a></li>
+<li><a href="Kelas7/7A2/Kuis13.html">📄 Kuis 13</a></li>
+<li><a href="Kelas7/7A2/Kuis14.html">📄 Kuis 14</a></li>
+<li><a href="Kelas7/7A2/Kuis15.html">📄 Kuis 15</a></li>
+<li><a href="Kelas7/7A2/Kuis16.html">📄 Kuis 16</a></li>
+<li><a href="Kelas7/7A2/Kuis17.html">📄 Kuis 17</a></li>
+<li><a href="Kelas7/7A2/Kuis18.html">📄 Kuis 18</a></li>
+<li><a href="Kelas7/7A2/Kuis19.html">📄 Kuis 19</a></li>
+<li><a href="#">📘 Penyajian Data</a></li>
+<li><a href="Kelas7/7A2/Kuis20.html">📄 Kuis 20</a></li>
+<li><a href="Kelas7/7A2/Kuis21.html">📄 Kuis 21</a></li>
+<li><a href="Kelas7/7A2/Kuis22.html">📄 Kuis 22</a></li>
+<li><a href="Kelas7/7A2/Kuis23.html">📄 Kuis 23</a></li>
+<li><a href="Kelas7/7A2/Kuis24.html">📄 Kuis 24</a></li>
+<li><a href="Kelas7/7A2/Kuis25.html">📄 Kuis 25</a></li>
     </ul>
   </details>
 </details>
 
-<!-- ================= KELAS 8 ================= -->
+<!-- ================= Kuis 3-4 ================= -->
 <details>
-  <summary>📗 Kelas 8</summary>
+  <summary>📗 Kuis 3-4</summary>
 
   <details>
-    <summary>Semester 1</summary>
+    <summary>📗 Kuis 3</summary>
     <ul>
-<li><a href="https://dianwiguna00.github.io/kelas8-matematika/">Matematika Kelas 8</a></li>
+<li><a href="https://dianwiguna00.github.io/8akkelx9Kq7Lm2PzR8vT1aYbN4uC6sD0hF3gJ5wE2rQ8tZ1pL9mXcV78tZ1pL9mXcV7bH6nA3sD8/">📗 Modul 3</a></li>
     </ul>
   </details>
   <details>
-    <summary>Semester 2</summary>
+    <summary>📗 Kuis 4</summary>
     <ul>
-<li><a href="https://dianwiguna00.github.io/kelas8-matematika/">Matematika Kelas 8</a></li>
+<li><a href="https://dianwiguna00.github.io/8akkelx9Kq7Lm2PzR8vT1aYbN4uC6sD0hF3gJ5wE2rQ8tZ1pL9mXcV78tZ1pL9mXcV7bH6nA3sD8/">📗 Modul 4</a></li>
     </ul>
   </details>
 </details>
 
-<!-- ================= KELAS 9 ================= -->
+<!-- ================= Kuis 5-6 ================= -->
 <details>
-  <summary>📕 Kelas 9</summary>
+  <summary>📕 Kuis 5-6</summary>
 
   <details>
-    <summary>Semester 1</summary>
+    <summary>📕 Kuis 5</summary>
     <ul>
-<li><a href="https://dianwiguna00.github.io/kelas9-matematika/">Matematika Kelas 9</a></li>
+<li><a href="https://dianwiguna00.github.io/9akkelx9Kq7Lm2PzR8vT1aYbN4uC6sD0hF3gJ5wE2rQ8tZ1pL9mXcV78tZ1pL9mXcV7bH6nA3sD9/">📕 Modul 5</a></li>
     </ul>
   </details>
   <details>
-    <summary>Semester 2</summary>
+    <summary>📕 Kuis 6</summary>
     <ul>
-<li><a href="https://dianwiguna00.github.io/kelas9-matematika/">Matematika Kelas 9</a></li>
+<li><a href="https://dianwiguna00.github.io/9akkelx9Kq7Lm2PzR8vT1aYbN4uC6sD0hF3gJ5wE2rQ8tZ1pL9mXcV78tZ1pL9mXcV7bH6nA3sD9/">📕 Modul 6</a></li>
     </ul>
   </details>
 </details>
 
+<!-- VIDEO -->
+<a href="https://youtube.com/@wigunadian/playlists"
+   target="_blank"
+   class="menu-button">
+  ▶️ Video Pembelajaran
+</a>
+
+<!-- FOOTER -->
 <div class="footer">
-Aplikasi ini dibuat untuk membantu belajar siswa dan guru di kelas menggunakan TV IFP (Interaktif Flat Panel), Semoga aplikasi ini bermanfaat, (Dian Wiguna)
+Matematika SMP / MTS
 </div>
 
-</div>
 </body>
 </html>
